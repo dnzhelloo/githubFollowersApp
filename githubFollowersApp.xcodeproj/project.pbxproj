@@ -12,6 +12,8 @@
 		225E637F29D06970009BBF39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E637E29D06970009BBF39 /* ViewController.swift */; };
 		225E638429D06971009BBF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225E638329D06971009BBF39 /* Assets.xcassets */; };
 		225E638729D06971009BBF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225E638529D06971009BBF39 /* LaunchScreen.storyboard */; };
+		225E638F29D070B3009BBF39 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E638E29D070B3009BBF39 /* SearchVC.swift */; };
+		225E639129D070CC009BBF39 /* FavoriteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E639029D070CC009BBF39 /* FavoriteListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		225E638329D06971009BBF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225E638629D06971009BBF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		225E638829D06971009BBF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225E638E29D070B3009BBF39 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		225E639029D070CC009BBF39 /* FavoriteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				225E638329D06971009BBF39 /* Assets.xcassets */,
 				225E638529D06971009BBF39 /* LaunchScreen.storyboard */,
 				225E638829D06971009BBF39 /* Info.plist */,
+				225E638E29D070B3009BBF39 /* SearchVC.swift */,
+				225E639029D070CC009BBF39 /* FavoriteListVC.swift */,
 			);
 			path = githubFollowersApp;
 			sourceTree = "<group>";
@@ -134,7 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225E638F29D070B3009BBF39 /* SearchVC.swift in Sources */,
 				225E637F29D06970009BBF39 /* ViewController.swift in Sources */,
+				225E639129D070CC009BBF39 /* FavoriteListVC.swift in Sources */,
 				225E637B29D06970009BBF39 /* AppDelegate.swift in Sources */,
 				225E637D29D06970009BBF39 /* SceneDelegate.swift in Sources */,
 			);
