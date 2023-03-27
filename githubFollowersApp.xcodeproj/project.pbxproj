@@ -72,23 +72,47 @@
 		225E637929D06970009BBF39 /* githubFollowersApp */ = {
 			isa = PBXGroup;
 			children = (
+				22A64ABE29D2059F0042575E /* Support */,
+				22A64ABD29D204E20042575E /* Custom Views */,
+				22A64ABC29D204BE0042575E /* Screens */,
 				22AC60C229D1AB520037C4D0 /* Extension */,
+				225E638829D06971009BBF39 /* Info.plist */,
+			);
+			path = githubFollowersApp;
+			sourceTree = "<group>";
+		};
+		22A64ABC29D204BE0042575E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				225E638E29D070B3009BBF39 /* SearchVC.swift */,
+				225E639029D070CC009BBF39 /* FavoriteListVC.swift */,
+				2291195529D1655F0042AAC6 /* FollowersListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		22A64ABD29D204E20042575E /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				225E639629D09839009BBF39 /* GFButton.swift */,
+				225E639829D09936009BBF39 /* GFTextField.swift */,
+				22AC60BC29D16C5C0037C4D0 /* GFTitleLabel.swift */,
+				22AC60BE29D16D8E0037C4D0 /* GFBodyLabel.swift */,
+				22AC60C029D1A4640037C4D0 /* AlertVC.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		22A64ABE29D2059F0042575E /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				225E637A29D06970009BBF39 /* AppDelegate.swift */,
 				225E637C29D06970009BBF39 /* SceneDelegate.swift */,
 				225E637E29D06970009BBF39 /* ViewController.swift */,
 				225E638329D06971009BBF39 /* Assets.xcassets */,
 				225E638529D06971009BBF39 /* LaunchScreen.storyboard */,
-				225E638829D06971009BBF39 /* Info.plist */,
-				225E638E29D070B3009BBF39 /* SearchVC.swift */,
-				225E639029D070CC009BBF39 /* FavoriteListVC.swift */,
-				225E639629D09839009BBF39 /* GFButton.swift */,
-				225E639829D09936009BBF39 /* GFTextField.swift */,
-				2291195529D1655F0042AAC6 /* FollowersListVC.swift */,
-				22AC60BC29D16C5C0037C4D0 /* GFTitleLabel.swift */,
-				22AC60BE29D16D8E0037C4D0 /* GFBodyLabel.swift */,
-				22AC60C029D1A4640037C4D0 /* AlertVC.swift */,
 			);
-			path = githubFollowersApp;
+			path = Support;
 			sourceTree = "<group>";
 		};
 		22AC60C229D1AB520037C4D0 /* Extension */ = {
