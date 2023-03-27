@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SearchVC: UIViewController {
     
     let logoImageView = UIImageView()
     let usernameTextField = GFTextField()
     let callActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    var isUsernameEntered:Bool{
+        return !(usernameTextField.text?.isEmpty  ?? true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +24,33 @@ class SearchVC: UIViewController {
         configureLogoImage()
         configureTextField()
         configureCallActionBtn()
+        
+        createDismissKeyboardTapGesture()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
+    }
+    
+    //MARK: dissmis Keyboard
+    func createDismissKeyboardTapGesture(){
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+    }
+    
+    //MARK: pushDataFollowerListVC
+    @objc func pushFollowerListVC(){
+        guard isUsernameEntered else {
+            print("there is not username")
+            return
+        }
+            
+        let followerListVC = FollowersListVC()
+        followerListVC.title = usernameTextField.text ?? ""
+        followerListVC.username = usernameTextField.text ?? ""
+        
+        navigationController?.pushViewController(followerListVC, animated: true)
     }
     
     //MARK: Logo
@@ -44,6 +70,7 @@ class SearchVC: UIViewController {
     //MARK: UsernameTextField
     func configureTextField(){
         view.addSubview(usernameTextField)
+        usernameTextField.delegate = self
         
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor,constant: 48),
@@ -56,6 +83,7 @@ class SearchVC: UIViewController {
     //MARK: Button
     func configureCallActionBtn(){
         view.addSubview(callActionButton)
+        callActionButton.addTarget(self, action: #selector(pushFollowerListVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             callActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant: -50),
@@ -63,5 +91,12 @@ class SearchVC: UIViewController {
             callActionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -50),
             callActionButton.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+}
+
+extension SearchVC:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pushFollowerListVC()
+        return true
     }
 }
