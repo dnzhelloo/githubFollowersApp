@@ -42,7 +42,7 @@ class SearchVC: UIViewController {
     //MARK: pushDataFollowerListVC
     @objc func pushFollowerListVC(){
         guard isUsernameEntered else {
-            print("there is not username")
+            presentGFAlertOnMainThread(title: "The Username error 🫢", message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis condimentum enim, ac vehicula orci elementum sed", btnTitle: "Ok")
             return
         }
             
