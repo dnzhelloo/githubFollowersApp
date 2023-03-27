@@ -17,6 +17,8 @@
 		225E639729D09839009BBF39 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E639629D09839009BBF39 /* GFButton.swift */; };
 		225E639929D09936009BBF39 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E639829D09936009BBF39 /* GFTextField.swift */; };
 		2291195629D1655F0042AAC6 /* FollowersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291195529D1655F0042AAC6 /* FollowersListVC.swift */; };
+		22A64AC129D20A3E0042575E /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A64AC029D20A3E0042575E /* Follower.swift */; };
+		22A64AC329D20B330042575E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A64AC229D20B330042575E /* User.swift */; };
 		22AC60BD29D16C5C0037C4D0 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AC60BC29D16C5C0037C4D0 /* GFTitleLabel.swift */; };
 		22AC60BF29D16D8E0037C4D0 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AC60BE29D16D8E0037C4D0 /* GFBodyLabel.swift */; };
 		22AC60C129D1A4640037C4D0 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AC60C029D1A4640037C4D0 /* AlertVC.swift */; };
@@ -36,6 +38,8 @@
 		225E639629D09839009BBF39 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		225E639829D09936009BBF39 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		2291195529D1655F0042AAC6 /* FollowersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListVC.swift; sourceTree = "<group>"; };
+		22A64AC029D20A3E0042575E /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		22A64AC229D20B330042575E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		22AC60BC29D16C5C0037C4D0 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		22AC60BE29D16D8E0037C4D0 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		22AC60C029D1A4640037C4D0 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 		225E637929D06970009BBF39 /* githubFollowersApp */ = {
 			isa = PBXGroup;
 			children = (
+				22A64ABF29D20A270042575E /* Model */,
 				22A64ABE29D2059F0042575E /* Support */,
 				22A64ABD29D204E20042575E /* Custom Views */,
 				22A64ABC29D204BE0042575E /* Screens */,
@@ -113,6 +118,15 @@
 				225E638529D06971009BBF39 /* LaunchScreen.storyboard */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		22A64ABF29D20A270042575E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22A64AC029D20A3E0042575E /* Follower.swift */,
+				22A64AC229D20B330042575E /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		22AC60C229D1AB520037C4D0 /* Extension */ = {
@@ -199,7 +213,9 @@
 				2291195629D1655F0042AAC6 /* FollowersListVC.swift in Sources */,
 				225E639729D09839009BBF39 /* GFButton.swift in Sources */,
 				225E639129D070CC009BBF39 /* FavoriteListVC.swift in Sources */,
+				22A64AC329D20B330042575E /* User.swift in Sources */,
 				225E637B29D06970009BBF39 /* AppDelegate.swift in Sources */,
+				22A64AC129D20A3E0042575E /* Follower.swift in Sources */,
 				22AC60BD29D16C5C0037C4D0 /* GFTitleLabel.swift in Sources */,
 				22AC60C129D1A4640037C4D0 /* AlertVC.swift in Sources */,
 				225E637D29D06970009BBF39 /* SceneDelegate.swift in Sources */,
